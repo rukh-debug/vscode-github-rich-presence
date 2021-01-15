@@ -7,7 +7,8 @@ const index = require('./index')
 io.on('connection', function (socket) {
   socket.on('update', async (data) => {
     let compare = await index.compareData(data)
-    if (compare){
+    console.log(data)
+	if (compare){
       await index.justBake(data.filename, data.wspace, data.time)
     }
     else{
