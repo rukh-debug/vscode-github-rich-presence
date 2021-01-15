@@ -1,0 +1,1 @@
+# vscode-github-rich-presence
