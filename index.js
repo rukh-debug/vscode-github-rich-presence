@@ -111,10 +111,65 @@ let justBake = async (file, wspace, time) => {
   })
 }
 
-let shakeAndBake = async (data) => {
-  return new Promise((res, rej) => {
-    //let difference = await calculateDuration(data.time)
-    justBake(data.filename, data.wspace, data.time)
+let die = async (prevTime, currTime) => {
+
+  let deadSince = shortEnglishHumanizer(difference)
+
+  let data = `<html lang="en">
+  <head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+  
+  .box{
+    border: 2px solid #666;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: Open Sans Condensed;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    height: 120px;
+    width: 400px;
+    background-color: #faf6f6;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .text-container{
+    margin: 7px 0px 7px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .text-item{
+    margin-bottom: 4px;
+  }
+  
+  .icon{
+    border-radius: 7px;
+  }
+  
+    </style>
+  </head>
+  <body>
+    <div class='box'>
+      <img class='icon' src='${vscodeImg}' width='85' hight='85' />
+      <div class='text-container'>
+        <div class='text-item'> VS Code Closed </div>
+        <div class='text-item'> Probably sleeping </div>
+        <div class='text-item'> Since ${deadSince} ago </div>
+      </div>
+    </div>
+  </body>
+  </html>`
+
+  h2i({
+    output: './public/img.jpeg',
+    type: 'jpeg',
+    quality: 100,
+    html: data,
+    transparent: true,
+    puppeteerArgs: { defaultViewport: { width: 416, height: 120 } }
   })
 }
 
@@ -148,3 +203,4 @@ exports.justBake = justBake;
 exports.shakeAndBake = shakeAndBake;
 exports.compareData = compareFile;
 exports.changeData = changeData;
+exports.die = die;
