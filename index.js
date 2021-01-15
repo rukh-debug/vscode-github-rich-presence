@@ -36,12 +36,12 @@ let calculateDuration = (now) => {
 }
 
 let lineFiexr = (file, wspace) => {
-  if (file !== null){
+  if (file !== null && file !== undefined){
   if (file.length > 30) {
     file = `${file.slice(0, 29)}...`
   }
   }
-  if(wspace !== null){
+  if(wspace !== null && wspace !== undefined){
   if (wspace.length > 25) {
     wspace = `${wspace.slice(0, 24)}...`
   }
