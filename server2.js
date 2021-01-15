@@ -27,15 +27,18 @@ io.on('connection', function (socket) {
 })
 
 let minutepassed = (current, past) => {
+  console.log(current)
+  console.log(past)
   let diff = current - past
+  console.log(diff)
   if (diff > 59999){
     index.die(diff)
   }
 }
-
+  
 setInterval(() => {
   let currentTime = getTime()
-  minutepassed(lastTime, currentTime)
+  minutepassed(currentTime, lastTime)
 }, 10000)
 
 console.log(__dirname)
