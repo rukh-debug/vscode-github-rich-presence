@@ -115,7 +115,7 @@ let justBake = async (file, wspace, time) => {
   })
 }
 
-let die = async (prevTime, currTime) => {
+let die = async (difference) => {
 
   let deadSince = shortEnglishHumanizer(difference)
 
