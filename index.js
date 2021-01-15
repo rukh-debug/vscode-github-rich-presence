@@ -128,7 +128,7 @@ let die = async (difference) => {
     <style>
   
   .box{
-    border: 2px solid #666;
+    border: 2px solid #faf6f6;
     border-radius: 7px;
     box-sizing: border-box;
     font-family: Open Sans Condensed;
@@ -136,10 +136,15 @@ let die = async (difference) => {
     letter-spacing: -0.02em;
     height: 120px;
     width: 400px;
-    background-color: #faf6f6;
+    color: #faf6f6;
+    background-color: #0D1117;
     padding: 15px;
     display: flex;
     flex-direction: row;
+  }
+
+  body{
+    background-color: #0D1117;
   }
   
   .text-container{

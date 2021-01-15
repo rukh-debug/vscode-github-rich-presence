@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+  
+  .box{
+    border: 2px solid #faf6f6;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: Open Sans Condensed;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    height: 120px;
+    width: 400px;
+    color: #faf6f6;
+    background-color: #0D1117;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .text-container{
+    margin: 7px 0px 7px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .text-item{
+    margin-bottom: 4px;
+  }
+  
+  .icon{
+    border-radius: 7px;
+  }
+  
+    </style>
+  </head>
+  <body>
+    <div class='box'>
+      <img class='icon' src='${vscodeImg}' width='85' hight='85' />
+      <div class='text-container'>
+        <div class='text-item'> VS Code Closed </div>
+        <div class='text-item'> Probably sleeping </div>
+        <div class='text-item'> Since ${deadSince} </div>
+      </div>
+    </div>
+  </body>
+  </html>`
