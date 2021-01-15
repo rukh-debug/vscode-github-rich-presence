@@ -16,7 +16,8 @@ io.on('connection', function (socket) {
   socket.on('update', async (data) => {
     lastTime = getTime()
     let compare = await index.compareData(data)
-    if (compare){
+    console.log(data)
+	if (compare){
       await index.justBake(data.filename, data.wspace, data.time)
     }
     else{
