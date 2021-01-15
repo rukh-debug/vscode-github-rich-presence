@@ -7,7 +7,7 @@ const index = require('./index')
 let lastTime;
 
 let getTime = () => {
-  var data = new Date();
+  var date = new Date();
   var time = date.getTime();
   return time
 }
