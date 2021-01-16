@@ -56,8 +56,16 @@ let vscodeImg = `data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vc
 
 
 let justBake = async (file, wspace, time) => {
+  
+  if( file === null && wspace === null){
+    file = 'no file opened'
+    wspace = 'idle'
+  }
+  
   let fixedData = lineFiexr(file, wspace)
   let duration = await calculateDuration(time)
+
+
 
   let data = `<html lang="en">
                <head>
