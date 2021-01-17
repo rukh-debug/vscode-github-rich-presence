@@ -7,7 +7,7 @@ It is a server for [this github extension](https://marketplace.visualstudio.com/
 ## What it does?
 
 It compiles the data received from the extension into image like this 
-[![Demo!][http://161.97.66.38:9998/img.jpeg]](http://161.97.66.38:9998/img.jpeg)
+[![Demo!](http://161.97.66.38:9998/img.jpeg)](http://161.97.66.38:9998/img.jpeg)
 
 If its not showing up, then understand my server is down.
 
