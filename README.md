@@ -2,7 +2,7 @@
 
 ## What is this?
 
-It is a server for [this github extension](https://marketplace.visualstudio.com/items?itemName=rubenkharel.github-vscode-richpresence) to work.
+It is a server for [this vscode extension](https://marketplace.visualstudio.com/items?itemName=rubenkharel.github-vscode-richpresence) to work.
 
 ## What it does?
 
