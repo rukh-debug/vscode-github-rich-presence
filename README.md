@@ -7,9 +7,9 @@ It is a server for [this vscode extension](https://marketplace.visualstudio.com/
 ## What it does?
 
 It compiles the data received from the extension into image like this 
+<br />
 [![Demo!](http://161.97.66.38:9998/img.jpeg)](http://161.97.66.38:9998/img.jpeg)
-
-
+<br />
 If its not showing up, then server must be down. [Here](https://i.imgur.com/PFrs5wZ.png) is the demo.
 
 ## How to use it?
