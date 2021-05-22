@@ -4,6 +4,11 @@
 
 A small webserver to generate a richprecence like this. 
 
+- When VSCode is offline
+![dark theme when offline](https://raw.githubusercontent.com/rubenkharel/vscode-github-rich-presence/main/repoAsset/darkmode.jpeg)
+
+- When VScode is working
+![white theme when online](https://raw.githubusercontent.com/rubenkharel/vscode-github-rich-presence/main/repoAsset/whitemode.jpeg)
 
 
 [this vscode extension](https://marketplace.visualstudio.com/items?itemName=rubenkharel.github-vscode-richpresence) to work.
