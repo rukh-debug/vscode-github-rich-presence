@@ -14,6 +14,7 @@ let getTime = () => {
 
 io.on('connection', function (socket) {
   socket.on('update', async (data) => {
+    console.log(data)
     lastTime = getTime()
     let compare = await index.compareData(data)
     console.log(data)
@@ -28,10 +29,7 @@ io.on('connection', function (socket) {
 })
 
 let minutepassed = (current, past) => {
-  console.log(current)
-  console.log(past)
   let diff = current - past
-  console.log(diff)
   if (diff > 59999){
     index.die(diff)
   }
@@ -42,7 +40,6 @@ setInterval(() => {
   minutepassed(currentTime, lastTime)
 }, 10000)
 
-console.log(__dirname)
 app.use(express.static(`${__dirname}/public`));
 app.listen(9999)
 server.listen(9998);

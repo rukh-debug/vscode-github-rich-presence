@@ -1,8 +1,10 @@
 # vscode-github-rich-presence
 
-## What is this?
+## What
 
-It is a server for [this vscode extension](https://marketplace.visualstudio.com/items?itemName=rubenkharel.github-vscode-richpresence) to work.
+A server which generates 
+
+[this vscode extension](https://marketplace.visualstudio.com/items?itemName=rubenkharel.github-vscode-richpresence) to work.
 
 ## What it does?
 
