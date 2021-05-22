@@ -2,7 +2,9 @@
 
 ## What
 
-A server which generates 
+A small webserver to generate a richprecence like this. 
+
+
 
 [this vscode extension](https://marketplace.visualstudio.com/items?itemName=rubenkharel.github-vscode-richpresence) to work.
 
