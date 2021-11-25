@@ -1,23 +1,10 @@
 # vscode-github-rich-presence
-
-## What
-
-A small webserver to generate a richprecence like this. 
-
-- When VSCode is offline
+Just trying to butify github readme.
 
 
+### Preview
 ![dark theme when offline](https://raw.githubusercontent.com/rubenkharel/vscode-github-rich-presence/main/repoAsset/darkmode.jpeg)
-
-- When VScode is working
-
-
 ![white theme when online](https://raw.githubusercontent.com/rubenkharel/vscode-github-rich-presence/main/repoAsset/whitemode.jpeg)
-
-
-## Why?
-
-For fun, inspired from [Discord Rich Presence](https://discord.com/rich-presence)
 
 
 ## How?
@@ -57,3 +44,10 @@ $ pm2 start server2.js
 ## HELP I AM STUCK.
 
 - Create an issue.
+
+
+
+
+
+inspired from [Discord Rich Presence](https://discord.com/rich-presence)
+
